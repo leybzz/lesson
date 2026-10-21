@@ -27,3 +27,22 @@ elif 0 <= score < 50:
     print("Незадовільно")
 else:
     print("Помилка")
+
+ #завдання3
+
+salary = float(input())
+experience = float(input())
+
+if experience < 1:
+    print("Премія не передбачена")
+elif 1 <= experience <= 3:
+    bonus = salary * 0.05
+    print(f"Сума премії: {bonus}")
+elif 3 < experience <= 5:
+    bonus = salary * 0.10
+    print(f"Сума премії: {bonus}")
+elif experience > 5:
+    bonus = salary * 0.15
+    print(f"Сума премії: {bonus}")
+else:
+    print("Помилка")
