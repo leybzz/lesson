@@ -46,3 +46,17 @@ elif experience > 5:
     print(f"Сума премії: {bonus}")
 else:
     print("Помилка")
+#завдання4
+
+number_str = input()
+
+if len(number_str) == 6 and number_str.isdigit():
+    first_sum = int(number_str[0]) + int(number_str[1]) + int(number_str[2])
+    second_sum = int(number_str[3]) + int(number_str[4]) + int(number_str[5])
+    
+    if first_sum == second_sum:
+        print("Щасливе число")
+    else:
+        print("Нещасливе число")
+else:
+    print("Помилка")
