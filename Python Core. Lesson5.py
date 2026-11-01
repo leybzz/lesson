@@ -1,0 +1,26 @@
+# Завдання 3
+n = int(input("Число (1-100): "))
+if 1 <= n <= 100:
+    if n % 3 == 0 and n % 5 == 0: print("Fizz Buzz")
+    elif n % 3 == 0: print("Fizz")
+    elif n % 5 == 0: print("Buzz")
+    else: print(n)
+else:
+    print("Помилка!")
+
+
+# Завдання 4
+s1 = float(input("Продажі 1: "))
+s2 = float(input("Продажі 2: "))
+s3 = float(input("Продажі 3: "))
+
+z1 = 200 + s1 * (0.03 if s1 < 500 else 0.05 if s1 <= 1000 else 0.08)
+z2 = 200 + s2 * (0.03 if s2 < 500 else 0.05 if s2 <= 1000 else 0.08)
+z3 = 200 + s3 * (0.03 if s3 < 500 else 0.05 if s3 <= 1000 else 0.08)
+
+print(f"Зарплати: {z1}, {z2}, {z3}")
+
+best = max(z1, z2, z3)
+if best == z1: print("Найкращий 1-й, зарплата з премією:", z1 + 200)
+elif best == z2: print("Найкращий 2-й, зарплата з премією:", z2 + 200)
+else: print("Найкращий 3-й, зарплата з премією:", z3 + 200)
