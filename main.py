@@ -1,5 +1,16 @@
-a = int(input("sum :"))
-b = float(input("%: "))
+import calc
 
-result = (a * b)/100
-print(f"{b}% from {a} = {result}")
+a = int(input("a = "))
+b = int(input("b = "))
+op = input("+, -, *, /: ")
+
+if op == "+":
+    print(calc.add(a, b))
+elif op == "-":
+    print(calc.dif(a, b))
+elif op == "*":
+    print(calc.mul(a, b))
+elif op == "/":
+    print(calc.div(a, b))
+else:
+    print("Input error.")
